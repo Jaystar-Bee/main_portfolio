@@ -1,6 +1,8 @@
 <template>
   <div class="font-body">
-    <the-header></the-header>
+    <div>
+      <the-header></the-header>
+    </div>
     <Nuxt />
     <the-footer></the-footer>
   </div>
@@ -20,5 +22,16 @@ export default {}
 }
 html {
   scroll-behavior: smooth;
+}
+@keyframes blink {
+  0% {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 </style>

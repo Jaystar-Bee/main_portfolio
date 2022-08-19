@@ -1,0 +1,25 @@
+<template>
+  <div
+    class="
+      bg-white
+      w-10/12
+      rounded-lg
+      px-2
+      sm:px-10
+      py-6
+      sm:py-10
+      mx-auto
+      flex
+      items-center
+      justify-between
+      sm:justify-evenly
+    "
+  >
+    <div>
+      <h3 class="text-sm sm:text-base font-semibold">Connet with me</h3>
+    </div>
+    <div>
+      <social-media></social-media>
+    </div>
+  </div>
+</template>
