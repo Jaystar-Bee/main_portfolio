@@ -2,6 +2,7 @@
   <li class="overflow-hidden bg-cover rounded-lg shadow-sm relative">
     <img
       :src="project.image"
+      loading="lazy"
       alt=""
       class="w-full h-full object-cover duration-1000"
     />
@@ -28,10 +29,16 @@
             <picture>
               <source
                 srcset="~/static/img/external-link.webp"
+                loading="lazy"
                 type="image/webp"
                 class="w-10"
               />
-              <img src="~/static/img/external-link.png" alt="" class="w-6" />
+              <img
+                src="~/static/img/external-link.png"
+                loading="lazy"
+                alt=""
+                class="w-6"
+              />
             </picture>
           </div>
         </a>

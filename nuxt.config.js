@@ -1,3 +1,4 @@
+// import { defineNuxtConfig } from 'nuxt'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -31,8 +32,27 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
   ],
+  colorMode: {
+    classSuffix: '',
+    preference: 'system',
+    fallback: 'light',
+    hid: 'nuxt-color-mode-script',
+
+  },
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+  },
+  'nuxt-compress': {
+    gzip: {
+      threshold: 8192,
+    },
+    brotli: {
+      threshold: 8192,
+    },
+  },
 
   googleFonts: {
     prefetch: true,
@@ -51,6 +71,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/color-mode',
+    'nuxt-compress'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

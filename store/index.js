@@ -1,5 +1,5 @@
 export const state = () => ({
-    Gtheme: 'default'
+    theme: 'system'
 })
 export const getters = {
     theme(state) {

@@ -29,7 +29,7 @@
     >
       <div class="mb-10 flex justify-end">
         <picture>
-          <source srcset="~/static/img/close.png" type="image/webp" />
+          <source srcset="~/static/img/close.webp" type="image/webp" />
           <img
             src="~/static/img/close.png"
             class="w-4"

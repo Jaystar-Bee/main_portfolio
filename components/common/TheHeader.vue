@@ -1,4 +1,4 @@
-<template>
+<template class="dark">
   <header class="bg-white sticky z-50 top-0 dark:text-white">
     <nav
       class="
@@ -13,27 +13,34 @@
       "
     >
       <div>
-        <p class="font-display text-bold uppercase text-red-500 text-xl">
-          Jaystar
-        </p>
+        <picture>
+          <source
+            srcset="~/static/img/logo.webp"
+            type="image/webp"
+            class="w-14"
+          />
+          <img src="~/static/img/logo.png" alt="logo" class="w-14" />
+        </picture>
       </div>
-      <div>
-        <!-- <div class="px-1 pr-2 py-1 bg-primary-yellow rounded-md"> -->
+      <!-- <div>
         <select
           name="theme"
           class="outline-none bg-transparent"
           v-model="theme"
           @change="changeTheme"
         >
-          <option value="default">Default</option>
+          <option value="system">Default</option>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
         </select>
-        <!-- </div> -->
-      </div>
+      </div> -->
       <div class="md:hidden">
         <picture>
-          <source srcset="~/static/img/menu.png" class="w-6" />
+          <source
+            srcset="~/static/img/menu.webp"
+            class="w-6"
+            type="image/webp"
+          />
           <img
             src="~/static/img/menu.png"
             class="w-6"
@@ -78,7 +85,8 @@ export default Vue.extend({
   },
   methods: {
     changeTheme() {
-      console.log(this.theme)
+      // this.theme = useColorMode()
+      // console.log(useColorMode().preference)
     },
   },
 })

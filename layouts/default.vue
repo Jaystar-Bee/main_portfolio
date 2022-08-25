@@ -1,11 +1,14 @@
 <template>
   <div class="font-body">
     <teleport to="body">
+      <the-message
+        v-if="message && showMessage"
+        :message="message"
+        @closeMessage="closeMessage"
+      ></the-message>
       <mobile-header @close="closeNav" v-if="navIsVisible"></mobile-header>
     </teleport>
-    <div>
-      <the-header @showNav="showNav"></the-header>
-    </div>
+    <the-header @showNav="showNav"></the-header>
     <Nuxt />
     <the-footer></the-footer>
   </div>
@@ -17,15 +20,33 @@ export default Vue.extend({
   data() {
     return {
       navIsVisible: false,
+      showMessage: false,
     }
   },
+  computed: {
+    message(): any {
+      const message = this.$route.query.message
+      if (!message) {
+        return
+      }
+      this.showMessage = true
+      return {
+        title: 'Success',
+        message,
+      }
+    },
+  },
   methods: {
-    closeNav() {
+    closeNav(): void {
       console.log('closing')
       this.navIsVisible = false
     },
-    showNav() {
+    showNav(): void {
       this.navIsVisible = !this.navIsVisible
+    },
+    closeMessage() {
+      this.showMessage = false
+      this.$router.push('/')
     },
   },
 })
