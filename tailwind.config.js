@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+    // darkMode: 'class',
     theme: {
         fontFamily: {
             display: ['Teko', 'sans-serif'],
@@ -17,7 +18,9 @@ module.exports = {
             }
         }
     },
-    plugins: [],
+    plugins: [
+        // require('tailwindcss-dark-mode')()
+    ],
     content: [
         `components/**/*.{vue,js}`,
         `layouts/**/*.vue`,

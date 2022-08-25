@@ -67,16 +67,18 @@
           >Email me</the-button
         >
       </a>
-      <button-outline
-        class="
-          border-4 border-primary-pink
-          hover:bg-primary-pink hover:text-white
-          text-xs
-          md:text-base
-        "
-        rounded="lg"
-        >Download CV</button-outline
-      >
+      <a href="~/static/document/Ayilara Boluwatife John CV.pdf" download>
+        <button-outline
+          class="
+            border-4 border-primary-pink
+            hover:bg-primary-pink hover:text-white
+            text-xs
+            md:text-base
+          "
+          rounded="lg"
+          >Download CV</button-outline
+        >
+      </a>
     </div>
   </div>
 </template>

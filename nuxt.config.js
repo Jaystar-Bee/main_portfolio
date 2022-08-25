@@ -40,11 +40,11 @@ export default {
     families: {
       Roboto: true,
       Poppins: [100, 200, 300, 400, 500, 600, 700, 800],
-      Teko: [100, 200, 300, 400, 500, 600, 700, 800],
-      Raleway: {
-        wght: [100, 400],
-        ital: [100]
-      },
+      // Teko: [100, 200, 300, 400, 500, 600, 700, 800],
+      // Raleway: {
+      //   wght: [100, 400],
+      //   ital: [100]
+      //  },
     }
   },
   // Modules: https://go.nuxtjs.dev/config-modules

@@ -1,15 +1,34 @@
 <template>
   <div class="font-body">
+    <teleport to="body">
+      <mobile-header @close="closeNav" v-if="navIsVisible"></mobile-header>
+    </teleport>
     <div>
-      <the-header></the-header>
+      <the-header @showNav="showNav"></the-header>
     </div>
     <Nuxt />
     <the-footer></the-footer>
   </div>
 </template>
 
-<script>
-export default {}
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      navIsVisible: false,
+    }
+  },
+  methods: {
+    closeNav() {
+      console.log('closing')
+      this.navIsVisible = false
+    },
+    showNav() {
+      this.navIsVisible = !this.navIsVisible
+    },
+  },
+})
 </script>
 
 <style>

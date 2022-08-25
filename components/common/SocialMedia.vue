@@ -5,9 +5,13 @@
         <source
           srcset="~/static/img/github.webp"
           type="image/webp"
-          class="w-8 hover:w-9"
+          class="w-6 sm:w-8 hover:w-9"
         />
-        <img src="~/static/img/github.png" alt="github" class="w-8 hover:w-9" />
+        <img
+          src="~/static/img/github.png"
+          alt="github"
+          class="w-6 sm:w-8 hover:w-9"
+        />
       </picture>
     </a>
     <a
@@ -15,14 +19,18 @@
       target="_blank"
     >
       <picture>
-        <source srcset="~/static/img/linkedin.webp" class="w-8" />
-        <img src="~/static/img/linkedin.png" alt="linkedin" class="w-8" />
+        <source srcset="~/static/img/linkedin.webp" class="w-6 sm:w-8" />
+        <img
+          src="~/static/img/linkedin.png"
+          alt="linkedin"
+          class="w-6 sm:w-8"
+        />
       </picture>
     </a>
     <a href="https://twitter.com/Jaystar_Bee" target="_blank">
       <picture>
-        <source srcset="~/static/img/twitter.webp" class="w-8" />
-        <img src="~/static/img/twitter.png" alt="" class="w-8" />
+        <source srcset="~/static/img/twitter.webp" class="w-6 sm:w-8" />
+        <img src="~/static/img/twitter.png" alt="" class="w-6 sm:w-8" />
       </picture>
     </a>
   </div>

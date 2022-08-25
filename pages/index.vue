@@ -1,5 +1,8 @@
 <template>
   <main>
+    <teleport to="body">
+      <the-message v-if="message"></the-message>
+    </teleport>
     <the-jumbotron></the-jumbotron>
     <about-section id="about"></about-section>
     <project-section id="project"></project-section>
@@ -16,6 +19,11 @@ export default Vue.extend({
     return {
       title: 'Home',
     }
+  },
+  computed: {
+    message() {
+      return this.$route.query.message
+    },
   },
 })
 </script>
