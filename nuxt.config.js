@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Ayilara John Portfolio' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -32,19 +32,16 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
+    // '@nuxtjs/color-mode',
     '@nuxtjs/google-fonts',
   ],
-  colorMode: {
-    classSuffix: '',
-    preference: 'system',
-    fallback: 'light',
-    hid: 'nuxt-color-mode-script',
+  // colorMode: {
+  //   classSuffix: '',
+  //   preference: 'system',
+  //   fallback: 'light',
+  //   hid: 'nuxt-color-mode-script',
 
-  },
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-  },
+  // },
   'nuxt-compress': {
     gzip: {
       threshold: 8192,
@@ -56,22 +53,17 @@ export default {
 
   googleFonts: {
     prefetch: true,
-    preload: true,
+    // preload: true,
     families: {
       Roboto: true,
       Poppins: [100, 200, 300, 400, 500, 600, 700, 800],
-      // Teko: [100, 200, 300, 400, 500, 600, 700, 800],
-      // Raleway: {
-      //   wght: [100, 400],
-      //   ital: [100]
-      //  },
     }
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@nuxtjs/color-mode',
+    // '@nuxtjs/color-mode',
     'nuxt-compress'
   ],
 
