@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-evenly items-center py-10">
+  <div class="flex justify-evenly items-center py-10 bg-gray-50">
     <div>
       <h2>&copy; Jaystar</h2>
     </div>
