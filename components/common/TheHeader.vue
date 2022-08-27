@@ -6,7 +6,7 @@
         mx-auto
         px-4
         md:px-0
-        py-6
+        py-4
         flex
         items-center
         justify-between
@@ -62,7 +62,7 @@
             >
           </li>
           <li>
-            <a download href="~/static/document/Ayilara Boluwatife John CV.pdf"
+            <a download href="/document/Ayilara Boluwatife John CV.pdf"
               >Download CV</a
             >
           </li>

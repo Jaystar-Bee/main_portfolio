@@ -67,7 +67,7 @@
           >Email me</the-button
         >
       </a>
-      <a href="~/static/document/Ayilara Boluwatife John CV.pdf" download>
+      <a href="/document/Ayilara Boluwatife John CV.pdf" download>
         <button-outline
           class="
             border-4 border-primary-pink

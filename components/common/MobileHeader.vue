@@ -80,7 +80,7 @@
             <a
               download
               class="w-full h-full"
-              href="/static/document/Ayilara Boluwatife John CV.pdf"
+              href="/document/Ayilara Boluwatife John CV.pdf"
               >Download CV</a
             >
           </li>
