@@ -4,7 +4,6 @@
       <picture class="relative z-10">
         <source
           srcset="~/static/img/about-transparent.webp"
-          loading="lazy"
           class="w-8/12 mx-auto"
         />
         <img

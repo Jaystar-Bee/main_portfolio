@@ -4,7 +4,11 @@
       <div>
         <picture>
           <source srcset="~/static/img/empty.webp" class="mx-auto w-5/12" />
-          <img src="~/static/img/empty.svg" alt="" class="mx-auto w-5/12" />
+          <img
+            src="~/static/img/empty.svg"
+            alt=""
+            class="mx-auto w-1/2 sm:w-5/12"
+          />
         </picture>
       </div>
       <div class="mt-10 text-center">

@@ -28,8 +28,8 @@
     </div>
     <div
       class="
-        mt-4
-        lg:mt-6
+        my-4
+        lg:my-6
         flex
         items-center
         space-x-10
