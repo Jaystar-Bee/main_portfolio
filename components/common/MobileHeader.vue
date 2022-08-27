@@ -18,7 +18,7 @@
         max-w-xs
         w-72
         bg-white
-        absolute
+        fixed
         rounded-md
         z-50
         nav
@@ -115,7 +115,7 @@ export default Vue.extend({
 
 <style scoped>
 .nav {
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
