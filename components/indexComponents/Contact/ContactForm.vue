@@ -5,24 +5,24 @@
       method="post"
     >
       <div class="mb-6">
-        <label for="Email" class="block mb-4"
+        <label for="email" class="block mb-4"
           >Email <span class="text-red-500">*</span></label
         >
         <input
           type="text"
-          name="Email"
+          name="email"
           placeholder="your email"
           class="outline-none px-6 py-4 rounded-md w-full font-semibold"
           ref="email"
         />
       </div>
       <div class="mb-6">
-        <label for="Name" class="block mb-4"
+        <label for="name" class="block mb-4"
           >Name <span class="text-red-500">*</span></label
         >
         <input
           type="text"
-          name="Name"
+          name="name"
           placeholder="your name"
           class="outline-none px-6 py-4 rounded-md w-full font-semibold"
           ref="name"
