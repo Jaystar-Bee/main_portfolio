@@ -4,7 +4,9 @@
       <the-message v-if="message"></the-message>
     </teleport>
     <the-jumbotron></the-jumbotron>
-    <about-section id="about"></about-section>
+    <div>
+      <about-section id="about"></about-section>
+    </div>
     <project-section id="project"></project-section>
     <contact-section id="contact"></contact-section>
   </main>
