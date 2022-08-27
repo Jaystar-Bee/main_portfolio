@@ -38,9 +38,15 @@ export const state = () => ({
         },
         {
             id: '2',
-            start: '2020',
-            end: '2021',
-            company: 'Aimtoget Limited'
+            start: 'October 2020',
+            end: 'April 2021',
+            company: 'Aimtoget Limited - Intern'
+        },
+        {
+            id: '3',
+            start: 'March 2022',
+            end: 'July 2022',
+            company: 'Tabagoods - Frontend'
         },
 
     ],
