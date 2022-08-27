@@ -28,6 +28,14 @@ export const state = () => ({
             title: 'B.Tech',
 
         },
+        {
+            id: '1',
+            year: 2020,
+            discipline: 'Fullstack',
+            school: 'Zero to Master (Complete Web Developer) - Udemy',
+            title: 'Web Development',
+
+        },
     ],
     experiences: [
         {
