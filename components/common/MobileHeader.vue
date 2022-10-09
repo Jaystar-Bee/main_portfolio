@@ -74,7 +74,7 @@
             "
             @click="closeModal"
           >
-            <nuxt-link to="#contact">Contact</nuxt-link>
+            <nuxt-link to="/#contact">Contact</nuxt-link>
           </li>
           <li
             class="
@@ -86,7 +86,7 @@
             "
             @click="closeModal"
           >
-            <nuxt-link to="#about">About</nuxt-link>
+            <nuxt-link to="/#about">About</nuxt-link>
           </li>
           <li class="pb-4 mb-4 text-center font-semibold" @click="closeModal">
             <a
